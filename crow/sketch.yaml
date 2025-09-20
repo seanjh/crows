@@ -1,0 +1,13 @@
+---
+profiles:
+  crow:
+    fqbn: esp32:esp32:XIAO_ESP32C3
+    platforms:
+      - platform: esp32:esp32 (3.3.1)
+        platform_index_url: https://espressif.github.io/arduino-esp32/package_esp32_index.json
+    metrics:
+      enabled: false
+    libraries: []
+    port: <PORT_NAME>
+    port_config:
+      baudrate: 115200
