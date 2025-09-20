@@ -8,6 +8,6 @@ profiles:
     metrics:
       enabled: false
     libraries: []
-    port: <PORT_NAME>
+    port: /dev/ttyACM0
     port_config:
       baudrate: 115200

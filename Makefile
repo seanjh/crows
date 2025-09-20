@@ -17,6 +17,6 @@ clean:
 
 monitor:
 	@cd $(SKETCH_DIR)
-	arduino-cli monitor --port /dev/ttyUSB0 --config baudrate=$(BAUDRATE)
+	arduino-cli monitor --profile crow $(SKETCH)
 
 .PHONY: compile upload clean monitor
