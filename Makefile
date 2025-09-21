@@ -1,22 +1,20 @@
-SKETCH_DIR = crow
-SKETCH = $(SKETCH_DIR)/crow.ino
-BAUDRATE = 921600
-BUILD_DIR = build
-TARGET = $(BUILD_DIR)/$(notdir $(SKETCH)).bin
+.PHONY: all build upload uploadfs flahs monitor clean
 
-compile: clean
-	@cd $(SKETCH_DIR)
-	arduino-cli compile --profile crow --output-dir $(BUILD_DIR) $(SKETCH)
+all: build
 
-upload: compile
-	@cd $(SKETCH_DIR)
-	arduino-cli upload --profile crow --input-dir $(BUILD_DIR) $(SKETCH)
+build:
+	pio run
 
-clean:
-	rm -rf $(BUILD_DIR)
+upload:
+	pio run -t upload
+
+uploadfs:
+	pio run -t uploadfs
+
+flash: upload uploadfs
 
 monitor:
-	@cd $(SKETCH_DIR)
-	arduino-cli monitor --profile crow $(SKETCH)
+	pio device monitor -b 115200
 
-.PHONY: compile upload clean monitor
+clean:
+	pio run -t clean
