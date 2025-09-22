@@ -1,3 +1,5 @@
 build/
 .pioenvs
 .piolibdeps
+.pio
+managed_components/

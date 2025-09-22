@@ -33,3 +33,4 @@ Halloween crows electronics project
 - [3″INCH 8 OHM1 W Datasheet](https://cdn-shop.adafruit.com/product-files/1313/C2464-001_datasheet.pdf)
 - [LDD-350L Datasheet](https://www.mouser.com/datasheet/3/67/1/LDD-L-SPEC.PDF)
 - [Adafruit ZeroI2S](https://github.com/adafruit/Adafruit_ZeroI2S)
+- [PlatformIO Espressif 32](https://docs.platformio.org/en/latest/platforms/espressif32.html)
