@@ -1,0 +1,4 @@
+---
+CompileFlags:
+  CompilationDatabase: .pio/build/esp32dev
+  Remove: [-fno-shrink-wrap, -fno-tree-switch-conversion, -fstrict-volatile-bitfields]

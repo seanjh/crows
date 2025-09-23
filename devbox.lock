@@ -1,54 +1,6 @@
 {
   "lockfile_version": "1",
   "packages": {
-    "arduino-cli@latest": {
-      "last_modified": "2025-08-03T19:18:05Z",
-      "resolved": "github:NixOS/nixpkgs/bf9fa86a9b1005d932f842edf2c38eeecc98eef3#arduino-cli",
-      "source": "devbox-search",
-      "version": "1.2.2",
-      "systems": {
-        "aarch64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/vgs6a33lhfbfxd6ca10v0cc4i29h633c-arduino-cli-1.2.2",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/vgs6a33lhfbfxd6ca10v0cc4i29h633c-arduino-cli-1.2.2"
-        },
-        "aarch64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/f5li3g8d60aw4m5y6y5vp1smkf268zg4-arduino-cli-1.2.2",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/f5li3g8d60aw4m5y6y5vp1smkf268zg4-arduino-cli-1.2.2"
-        },
-        "x86_64-darwin": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/w5fl0b76fmgdhk61lm74rzqfblf58aif-arduino-cli-1.2.2",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/w5fl0b76fmgdhk61lm74rzqfblf58aif-arduino-cli-1.2.2"
-        },
-        "x86_64-linux": {
-          "outputs": [
-            {
-              "name": "out",
-              "path": "/nix/store/qvawa0174d6hlxkh6gwqcfg0d1mxfyid-arduino-cli-1.2.2",
-              "default": true
-            }
-          ],
-          "store_path": "/nix/store/qvawa0174d6hlxkh6gwqcfg0d1mxfyid-arduino-cli-1.2.2"
-        }
-      }
-    },
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "last_modified": "2025-09-19T06:08:23Z",
       "resolved": "github:NixOS/nixpkgs/12bd230118a1901a4a5d393f9f56b6ad7e571d01?lastModified=1758262103&narHash=sha256-aBGl3XEOsjWw6W3AHiKibN7FeoG73dutQQEqnd%2FetR8%3D"
@@ -142,6 +94,70 @@
             }
           ],
           "store_path": "/nix/store/kzf67ka1wa2055bnsdrnqnv59md9xbxa-gnumake-4.4.1"
+        }
+      }
+    },
+    "platformio@latest": {
+      "last_modified": "2025-08-04T03:33:26Z",
+      "resolved": "github:NixOS/nixpkgs/6a489c9482ca676ce23c0bcd7f2e1795383325fa#platformio",
+      "source": "devbox-search",
+      "version": "6.1.18",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/szymjq7qwg0mdyf1sl92rhf91q33lirp-platformio-6.1.18",
+              "default": true
+            },
+            {
+              "name": "udev",
+              "path": "/nix/store/r1yd8m4rm49w71018rapvm46r81im24n-platformio-6.1.18-udev"
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/s71cbjp2vwg02knx4cypq6f2irb0cikh-platformio-6.1.18-dist"
+            }
+          ],
+          "store_path": "/nix/store/szymjq7qwg0mdyf1sl92rhf91q33lirp-platformio-6.1.18"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/5n3b77x5ah3knkg6lr9l580r36j2r2c8-platformio-6.1.18",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/5n3b77x5ah3knkg6lr9l580r36j2r2c8-platformio-6.1.18"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/caixskw1k1wa8m57qjjwjj6fqpxrchjl-platformio-6.1.18",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/xvdgpmycw301hwnahrsc3i6byv3c61jv-platformio-6.1.18-dist"
+            },
+            {
+              "name": "udev",
+              "path": "/nix/store/n8a1yb47bbk9kkwj8nfpa7qg9n3caczr-platformio-6.1.18-udev"
+            }
+          ],
+          "store_path": "/nix/store/caixskw1k1wa8m57qjjwjj6fqpxrchjl-platformio-6.1.18"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/kjy060f9xx2045lf7gggc92svzc06cl1-platformio-6.1.18",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/kjy060f9xx2045lf7gggc92svzc06cl1-platformio-6.1.18"
         }
       }
     }

@@ -1,1 +1,7 @@
 build/
+.pioenvs
+.piolibdeps
+.pio
+managed_components/
+.claude/settings.local.json
+CLAUDE.local.md
