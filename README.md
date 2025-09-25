@@ -13,7 +13,7 @@ Halloween crows electronics project
 
 ## Parts
 
-- MCU - [Seeed Studio XIAO ESP32-C3](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html)
+- [Seeed Studio XIAO ESP32-C3](https://www.seeedstudio.com/Seeed-XIAO-ESP32C3-p-5431.html)
 - [Adafruit I2S 3W Class D Amplifier Breakout - MAX98357A](https://www.adafruit.com/product/3006#description)
 - [Speaker - 3" Diameter - 8 Ohm 1 Watt](https://www.adafruit.com/product/1313)
 - [Mean Well LDD-350](https://www.mouser.com/ProductDetail/MEAN-WELL/LDD-350L?qs=erfQA2AIGbV6X3EIxtUKew%3D%3D)
@@ -23,6 +23,7 @@ Halloween crows electronics project
 ## Reference materials
 
 - [Getting started with Seeed Studio XIAO ESP32C3](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started/#introduction)
+- [arduino-esp32](https://github.com/espressif/arduino-esp32)
 - [ESP32 Arduino Core documentation](https://docs.espressif.com/projects/arduino-esp32/en/latest/index.html)
 - [ESP-IDF ESP32-C3](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/index.html)
 - [Espressif Advanced Development Framework Guide](https://docs.espressif.com/projects/esp-adf/en/latest/get-started/index.html)
