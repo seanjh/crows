@@ -1,32 +1,38 @@
 #include <Arduino.h>
-#include <LittleFS.h>
+#include <I2S.h>
 
-#include "FS.h"
-
-#define FORMAT_LITTLEFS_IF_FAILED true
-
-static const char *PARTITION_LABEL = "storage";
-static const char *BASE_PATH = "/data";
+const int I2S_LRC = 7;  // GPIO7 - Left/Right Clock
+const int I2S_BCLK = 6; // GPIO6 - Bit Clock
+const int I2S_DIN = 5;  // GPIO5 - Data Out
 
 void setup() {
   Serial.begin(115200);
-  if (!LittleFS.begin(FORMAT_LITTLEFS_IF_FAILED, BASE_PATH, 10,
-                      PARTITION_LABEL)) {
-    Serial.println("LittleFS mount failed");
-    return;
-  }
+  Serial.println("Starting minimal I2S test...");
+
+  // TODO(human) - Configure I2S with new API
+
+  Serial.println("I2S initialized");
 }
 
+const int frequency = 440;    // 440Hz square wave
+const int sampleRate = 16000; // 16kHz sample rate
+const int amplitude = 8000;   // Amplitude value
+unsigned int sample_count = 0;
+const unsigned int samplesPerHalfCycle = sampleRate / frequency / 2;
+bool isHigh = true;
+
 void loop() {
-  Serial.printf("Reading file: %s\n", "/hello.txt");
-  File file = LittleFS.open("/hello.txt");
-  if (!file || file.isDirectory()) {
-    Serial.println("- failed to open file for reading");
+  // Generate a single square wave sample
+  if (sample_count % samplesPerHalfCycle == 0) {
+    isHigh = !isHigh;
   }
-  Serial.println("- read from file:");
-  while (file.available()) {
-    Serial.write(file.read());
-  }
-  file.close();
-  delay(1000);
+
+  int16_t sample = isHigh ? amplitude : -amplitude;
+
+  // TODO(human) - Write sample to I2S
+
+  sample_count++;
+
+  // Small delay to prevent overwhelming the I2S buffer
+  delayMicroseconds(62); // ~16kHz sample rate (1000000/16000 = 62.5)
 }
